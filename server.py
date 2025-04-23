@@ -20,7 +20,7 @@ def add(a: int, b: int):
 
 # Run the server
 if __name__ == "__main__":
-    transport = "sse"  # Standard Input/Output (stdio)
+    transport = "sse"  # Standard Input/Output (stdio) or Server-Sent Events (SSE)
     if transport == "stdio":
         print("Running stdio Transport")
         mcp.run(transport="stdio")
