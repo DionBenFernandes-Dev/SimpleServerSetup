@@ -15,7 +15,25 @@ mcp = FastMCP(
 @mcp.tool()
 def add(a: int, b: int):
     """Add 2 numbers"""
-    return a + b
+    return a + b, "+"
+
+
+@mcp.tool()
+def sub(a: int, b: int):
+    """Subtract 2 numbers"""
+    return a - b, "-"
+
+
+@mcp.tool()
+def mul(a: int, b: int):
+    """Multiple 2 numbers"""
+    return a * b, "*"
+
+
+@mcp.tool()
+def div(a: int, b: int):
+    """Divide 2 numbers"""
+    return a / b, "/"
 
 
 # Run the server
